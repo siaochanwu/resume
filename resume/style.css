@@ -1,0 +1,149 @@
+ @import url('https://fonts.googleapis.com/css2?family=Trispace:wght@300;400;600&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+ * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+ }
+ .banner{
+   margin: 50px;
+  text-align: center;
+  font-family: 'Dancing Script',
+  cursive;
+ }
+ .banner h3{
+   font-size: 36px;
+ }
+ nav{
+  display: flex;
+  justify-content: center;
+ }
+ nav a{
+  text-decoration: none;
+  font-size: 36px;
+  padding-left: 15px;
+  color: #000;
+ }
+ nav a:hover{
+   color: rgb(84, 119, 160);
+ }
+
+ .container{
+  margin: 50px 200px;
+  display: flex;
+  
+  
+
+ }
+ .container .pic{
+  width: 50%;
+  position: relative;
+  
+ }
+ .container .pic img{
+   width: 100%;
+   vertical-align: middle;
+   
+   
+ }
+ 
+ 
+
+ .container .pic .name{
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   padding: 20px;
+   background-color: rgba(0,0,0,.6);
+   display: flex;
+   justify-content: center;
+   flex-direction: 
+   column;
+   align-items: center;
+   opacity: 0;
+   line-height: 2;
+   
+ }
+ .container .pic:hover .name{
+   opacity: 1;
+   
+ }
+ .container .pic:hover .name h2{
+   border: 5px solid #fff;
+   padding: 30px 80px;
+ }
+ .container .pic .name h2{
+   font-size: 48px;
+   color: #fff;
+ }
+
+
+ .container .txt {
+   text-align: center;
+   width: 50%;
+   padding: 200px 20px;
+   font-size: 36px;
+   line-height: 2;
+   background-color: rgba(119, 116, 116, 0.534);
+   margin: 0px auto;
+  position: relative; 
+  
+ }
+ .container .txt:hover{
+   /* opacity:.6; */
+ }
+ 
+ .container .txt .about h2{
+   opacity: 1;
+   /* position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   
+   
+   
+   justify-content: center;
+   flex-direction: column; 
+   align-items: center; */
+   width: 300px;
+   margin: auto; 
+   color: #fff;
+   border: 5px solid #fff;
+ }
+ 
+ 
+ .container .txt h4{
+   padding-top: 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: #fff;
+   opacity: 1;
+ }
+ 
+ }
+ .works{
+   margin: 50px 200px;
+
+ }
+ .works .demos{
+   display: flex;
+   width: 100%;
+   justify-content: space-between;
+   margin: 100px auto;
+  
+
+ }
+ .works .demo{
+   width: 500px;
+   height: 800px;
+   margin: 50px;
+   border: 2px solid  rgb(175, 41, 41);
+
+ }
