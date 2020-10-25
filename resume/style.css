@@ -1,11 +1,12 @@
  @import url('https://fonts.googleapis.com/css2?family=Trispace:wght@300;400;600&display=swap');
  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500&display=swap');
  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+ 
 
  * {
   margin: 0;
   padding: 0;
-  list-style: none;
+  
   box-sizing: border-box;
   
  }
@@ -136,7 +137,153 @@
    color: #fff;
    opacity: 1;
  }
+ .edu {
+   width: 80%;
+   margin: 50px auto;
+   position: relative;
+ }
+
+ .edu .title {
+   font-size: 48px;
+
+ }
+
+ .edu .title::before {
+   content: '';
+   position: absolute;
+   width: 250px;
+   height: 2px;
+   background-color: #000;
+   top: 70px;
+   left: 0;
+   right: 0;
+
+ }
+ .edu .txt{
+   margin: 30px;
+   font-size: 30px;
+   display: flex;
+   padding-right: 20px;
+ }
+ .edu .txt i{
+   font-size: 40px;
+   margin-right: 10px;
+ }
+ .edu .exp {
+   margin: 30px 35px;
+   font-size: 30px;
+   display: flex;
+   /* padding-right: 2px; */
+ }
+
+ .edu .exp i {
+   font-size: 40px;
+   margin-right: 15px;
+ }
+
+ .skill {
+   width: 80%;
+   margin: 50px auto;
+   position: relative;
+ }
+
+ .skill .title {
+   font-size: 48px;
+
+ }
+ .skill .title::before {
+    content: '';
+    position: absolute;
+    width: 250px;
+    height: 2px;
+    background-color: #000;
+    top: 70px;
+    left: 0;
+    right: 0;
+
+ }
+ .skill .content{
+   display: flex;
+    width: 100%;
+ }
+ .skill .content .web {
+   margin: 20px 00px 20px 20px;
+   width: 25%;
+ }
+ .skill .web ul {
+   font-size: 24px;
+   font-weight: 600;
+ }
+
+ .skill .web li {
+   font-size: 20px;
+   font-weight: 400;
+ }
+ .skill .content .web {
+   margin: 20px;
+   
+ }
+ .skill .web ul {
+   font-size: 24px;
+   font-weight: 600;
+ }
+
+ .skill .web li {
+   font-size: 20px;
+   font-weight: 400;
+ }
+
+
+.skill .content .other{
+  margin: 20px;
+  width: 25%;
+}
+.skill .other ul{
+  font-size: 24px;
+  font-weight: 600;
+}
+.skill .other li{
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.skill .content .git {
+  margin: 20px;
+  width: 25%;
+}
+
+.skill .git ul {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.skill .git li {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+
+
+
+
+
  
+ .skill .content .language {
+  margin: 20px;
+  width: 25%;
+ }
+  .skill .language ul{
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .skill .language li{
+    font-size: 20px;
+    font-weight: 400;
+  }
+ 
+ 
+
+
  
  .works{
    width: 80%;
@@ -150,7 +297,7 @@
  .works .title::before{
    content: '';
    position: absolute;
-   width: 200px;
+   width: 250px;
    height: 2px;
    background-color: #000;
   top: 70px;
@@ -169,15 +316,29 @@
  .works .demo{
    width: 400px;
    height: 600px;
+   
    margin: 10px;
    border: 2px solid  rgb(175, 41, 41);
-
+  
  }
  .works .demo img{
    width: 400px;
    height: 300px;
    box-sizing: border-box;
-   
-  
+ }
+
+ 
+
+ .works .demo .txt{
+
+ }
+ .works .demo h3{
+   padding-top: 10px;
+   font-size: 24px;
+  font-weight: 600;
+ }
+ .works .demo h4{
+   font-weight: 400;
+   padding-bottom: 10px;
  }
  
