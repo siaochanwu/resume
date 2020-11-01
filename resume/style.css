@@ -4,28 +4,31 @@
 
 
  * {
-  margin: 0;
-  padding: 0;
-  
-  box-sizing: border-box;
-  
+   margin: 0;
+   padding: 0;
+
+   box-sizing: border-box;
+
  }
- .navbar{
-  padding: 0;
-  background-color: rgb(231, 227, 227);
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 3;
+
+ .navbar {
+   padding: 0;
+   background-color: rgb(231, 227, 227);
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   z-index: 3;
  }
- .navbar .navbar-brand{
-  display: block;
-  margin: 20px;
-  color: #000;
-  font-size: 25px;
-  
+
+ .navbar .navbar-brand {
+   display: block;
+   margin: 20px;
+   color: #000;
+   font-size: 25px;
+
  }
+
  #menu_control {
    position: absolute;
    /* 讓按鈕消失 */
@@ -47,7 +50,7 @@
    display: block;
    position: absolute;
    top: 20px;
-   right: 20px;
+   right: 40px;
    border: 2px solid #000;
    border-radius: 5px;
  }
@@ -87,7 +90,7 @@
  nav a {
    display: flex;
    text-decoration: none;
-   color:#000;
+   color: #000;
    justify-content: center;
    line-height: 1;
    font-size: 24px;
@@ -100,11 +103,12 @@
    padding-top: 40px;
 
  }
+
  #menu_control:checked~.header nav {
    left: 0;
  }
 
- 
+
 
 
  @media screen and (min-width: 768px) {
@@ -149,110 +153,130 @@
    }
  }
 
- .banner{
+ .banner {
    margin-top: 80px;
  }
- .banner .src{
+
+ .banner .src {
    position: relative;
  }
- .banner img{
+
+ .banner img {
    width: 100%;
    margin: 0 auto 10px;
-   
+
  }
 
- .banner .name{
+ .banner .name p{
    display: block;
-   width: 50%;
-   font-size: 24px;
+   width: 100%;
+   font-size: 30px;
    position: absolute;
-   top: 50%;
-   left: 50%;
-   right: 50%;
-   
+   top: 40%;
+   left: 0;
+   right: 0;
+   text-align: center;
    z-index: 2;
-   color:#fff;
+   color: #fff;
  }
- .container{
-   padding:0;
- }
- .container .about .title{
+
+ /* .container {
+   padding: 0;
+ } */
+
+ .container .about .title {
    font-size: 1.5em;
-   
+
  }
- .container .txt{
-   padding:20px;
+
+ .container .txt {
+   padding: 20px;
  }
- .container .txt p{
+
+ .container .txt p {
    width: 100%;
    text-align: center;
    font-size: 1rem;
-   
+
  }
- .container .pic{
+
+ .container .pic {
    width: 50%;
-   margin: auto;
+   margin:0 auto;
    margin-bottom: 50px;
  }
- .container .pic img{
+
+ .container .pic img {
    width: 100%;
-   margin: 10px auto;
-   
  }
- .edu{
+
+ .edu {
    width: 100%;
    margin: 20px;
+   padding-top: 50px;
  }
- .edu .title{
+
+ .edu .title {
    font-size: 1.5em;
+   margin: 20px;
  }
- .edu .txt,.exp{
+
+ .edu .txt,
+ .exp {
    padding-top: 1em;
    display: flex;
    justify-content: center;
  }
 
- .skill{
+ .skill {
    width: 100%;
-   
-  
+
+
  }
- .skill .title{
+
+ .skill .title {
    font-size: 1.5em;
    margin: 20px;
  }
+
  .skill .content {
-    padding: 10px 20px;
-    text-align: center;
-    
+   padding: 10px 20px;
+   text-align: center;
+
  }
-.skill .content ul{
-  font-weight: 700;
-  font-size: 1.5em;
-}
- .skill .content li{
+
+ .skill .content ul {
+   font-weight: 700;
+   font-size: 1.5em;
+ }
+
+ .skill .content li {
    list-style: none;
    padding-top: 15px;
    font-weight: 400;
    font-size: 0.7em;
  }
- .skill .web{
+
+ .skill .web {
    position: relative;
  }
- .skill .web ul::before{
-  content: '';
-  width: 30%;
-  height: 0.1em;
-  background-color: #000;
-  position: absolute;
-  top: 13%;
-  left: 35%;
-  right: 0;
-  
+
+ .skill .web ul::before {
+   content: '';
+   width: 30%;
+   height: 0.1em;
+   background-color: #000;
+   position: absolute;
+   top: 13%;
+   left: 35%;
+   right: 0;
+
  }
- .skill .other{
+
+ .skill .other {
    position: relative;
  }
+
  .skill .other ul::before {
    content: '';
    width: 30%;
@@ -264,6 +288,7 @@
    right: 0;
 
  }
+
  .skill .git {
    position: relative;
  }
@@ -279,6 +304,7 @@
    right: 0;
 
  }
+
  .skill .language {
    position: relative;
  }
@@ -294,90 +320,97 @@
    right: 0;
 
  }
- .works{
+
+ .works {
    width: 100%;
-   
+
  }
- .works .title{
+
+ .works .title {
    font-size: 1.5em;
    padding: 20px;
  }
- .works .demo{
+
+ .works .demo {
    width: 80%;
    margin: auto;
    position: relative;
  }
- .works .demo img{
+
+ .works .demo img {
    width: 100%;
    margin: auto;
-  vertical-align: middle;
+   vertical-align: middle;
  }
- .works .demo .txt{
-  
+
+ .works .demo .txt {
+
    position: absolute;
    top: 20%;
    left: 25%;
    right: 25%;
-  text-align: center;
-  font-size: 36px;
-  color: #fff;
-  
-  
- }
- .works .demo:hover{
-   
- }
- .works .demo:hover .txt{
-  color: red; 
-  /* 需改進! */
+   text-align: center;
+   font-size: 36px;
+   color: #fff;
+
 
  }
-   
-.works .explain{
-  margin: 20px;
-  padding: 1.2em;
-} 
+
  
 
- @media screen and (min-width:768px){
-   
+ .works .explain {
+   margin: 20px;
+   padding: 1.2em;
+ }
 
-  .banner .name{
-    font-size: 48px;
-    
-  }
-  .container{
-    
-    margin: 50px auto;
-    padding: 0 20px;
-    display: flex;
-    max-width: 100%;
-    position: relative;
-  }
-  .container .about .title{
-    font-size: 48px;
-    padding-bottom: 20px;
-    
-  }
-  .container .txt{
-    width: 50%;
-  }
-  .container .txt p {
-    font-size: 20px;
-    text-align: left;
-  }
-  .container .pic{
-    width: 50%;
-    margin: 10px;
-    display: flex;
-    align-items: center;
-    
-  }
-  .container .pic img{
-    max-width: 50%;
-    border: 5px solid #000;
-  }
-  /* .container .pic::before{
+
+ @media screen and (min-width:768px) {
+
+
+   
+   .banner .name p{
+     font-size: 48px;
+   }
+
+   .container {
+
+     margin: 50px auto;
+     padding: 0 20px;
+     display: flex;
+     max-width: 100%;
+     position: relative;
+   }
+
+   .container .about .title {
+     font-size: 48px;
+     padding-bottom: 20px;
+
+   }
+
+   .container .txt {
+     width: 50%;
+   }
+
+   .container .txt p {
+     font-size: 20px;
+     text-align: left;
+   }
+
+   .container .pic {
+     width: 50%;
+     margin-top: 50px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+
+   }
+
+   .container .pic img {
+     
+     max-width: 50%;
+   }
+
+   /* .container .pic::before{
     content: '';
     min-width: 300px;
     min-height: 600px;
@@ -389,61 +422,89 @@
     border: 5px solid #000;
     transform: rotate(10deg);
   } */
-  .edu{
-    margin: 0;
-    height: 500px;
-    background-color: rgb(175, 194, 212);
-    
-  }
-  .edu .txt,.exp{
-    margin: 50px;
-  }
-  .edu .title{
-    font-size: 48px;
-  }
-  .edu .txt,
-  .exp {
-    justify-content: start;
-    font-size: 36px;
-  }
- .skill .title{
-   font-size: 48px;
- }
- .skill .content{
-   width: 100%;
-   display: flex;
- }
- .skill .web,.other,.git,.language{
-   width: 25%;
- }
- .skill .web ul::before {
-   display: none;
- }
- .skill .other ul::before {
-   display: none;
- }
- .skill .git ul::before {
-   display: none;
- }
- .skill .language ul::before {
-   display: none;
- }
- .skill .web,.other,.git,.language li{
-   font-size: 28px;
- }
- .works{
-   background-color: rgb(175, 194, 212);
- }
- .works .title{
-   font-size: 48px;
- }
- .works .demos{
-   width: 90%;
-   margin: auto;
-   
-   display: flex;
- }
- .works .demos .demo{
-   padding: 20px;
- }
+   .edu {
+     margin: 0;
+     height: 500px;
+     background-color: rgb(175, 194, 212);
+
+   }
+
+   .edu .txt,
+   .exp {
+     margin: 50px;
+   }
+
+   .edu .title {
+     font-size: 48px;
+   }
+
+   .edu .txt,
+   .exp {
+     justify-content: start;
+     font-size: 36px;
+   }
+
+   .skill .title {
+     font-size: 48px;
+   }
+
+   .skill .content {
+     width: 100%;
+     display: flex;
+   }
+
+   .skill .web,
+   .other,
+   .git,
+   .language {
+     width: 25%;
+   }
+
+   .skill .web ul::before {
+     display: none;
+   }
+
+   .skill .other ul::before {
+     display: none;
+   }
+
+   .skill .git ul::before {
+     display: none;
+   }
+
+   .skill .language ul::before {
+     display: none;
+   }
+
+   .skill .web li{
+     font-size: 22px;
+   }
+   .skill .other li{
+     font-size: 22px;
+   }
+   .skill .git li{
+     font-size: 22px;
+   }
+   .skill .language li{
+     font-size: 22px;
+   }
+
+   .works {
+     background-color: rgb(175, 194, 212);
+   }
+
+   .works .title {
+     font-size: 48px;
+   }
+
+   .works .demos {
+     width: 90%;
+     margin: auto;
+
+     display: flex;
+   }
+
+   .works .demos .demo {
+     padding: 20px;
+   }
  }
