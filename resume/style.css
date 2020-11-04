@@ -180,36 +180,67 @@
    color: #fff;
  }
 
- /* .container {
+  .container {
    padding: 0;
- } */
+ } 
 
  .container .about .title {
-   font-size: 2em;
+   font-size: 2.5em;
   font-weight: 700;
+  margin-bottom: 20px;
  }
 
  .container .txt {
    padding: 20px;
  }
-
+ .container .txt span {
+   font-size: 2em;
+   
+ }
  .container .txt p {
+   margin-top: 30px;
    width: 100%;
    text-align: center;
-   font-size: 1rem;
+   font-size: 1.5em;
 
  }
 
  .container .pic {
    width: 50%;
    margin:0 auto;
-   margin-bottom: 50px;
+   margin-bottom: 40px;
+   display: flex;
+   justify-content: center;
+   
  }
 
  .container .pic img {
-   width: 100%;
+   width: 50%;
+   border-radius: 10%;
+ }
+ .container .contact{
+   width: 80%;
+   margin: auto;
+ }
+ .container .contact span{
+   display: block;
+   width: 80%;
+   text-align: center;
+   margin: auto;
  }
 
+ .container .link{
+   width: 80%;
+   margin: auto;
+   display: flex;
+   justify-content: space-around;
+ }
+ .container i{
+   font-size: 60px;
+   margin: 20px;
+   
+   color: #000;
+ }
  .edu {
    width: 100%;
    
@@ -227,6 +258,13 @@
    display: flex;
    justify-content: center;
  }
+ .edu h6{
+   font-size: 16px;
+   margin: auto;
+   width: 40%;
+ }
+ 
+ 
 
  .skill {
    width: 100%;
@@ -368,17 +406,24 @@
    text-align: center;
  }
 
+ 
+
+
+
 
  @media screen and (min-width:768px) {
 
 
-   
+   .banner .src img{
+     height: 700px;
+   }
    .banner .name p{
      font-size: 48px;
+     
    }
 
    .container {
-
+    min-height: 500px;
      margin: 50px auto;
      padding: 0 20px;
      display: flex;
@@ -389,18 +434,30 @@
    .container .about .title {
      font-size: 48px;
      padding-bottom: 20px;
-
+    display: block;
+    
    }
+   
 
    .container .txt {
-     width: 50%;
+     width: 70%;
+     
    }
-
+    .container .txt span{
+      margin: 0 50px;
+    }
    .container .txt p {
+     padding-top:50px;
+     margin: 0 50px;
+     width: 80%;
      font-size: 20px;
      text-align: left;
    }
-
+   .container section{
+     width: 50%;
+     margin: 10px auto;
+     font-size: 30px;
+   }
    .container .pic {
      width: 50%;
      margin-top: 50px;
@@ -415,28 +472,23 @@
      max-width: 50%;
    }
 
-   /* .container .pic::before{
-    content: '';
-    min-width: 300px;
-    min-height: 600px;
-    position: absolute;
-    top: 13%;
-    left: 60%;
-    right: 0;
-    z-index: -5;
-    border: 5px solid #000;
-    transform: rotate(10deg);
-  } */
+   .container .contact span{
+     width: 100%;
+     padding: 10px;
+   }
+   .container .link{
+     width: 0;
+   }
    .edu {
      margin: 0;
-     height: 500px;
+     height: 600px;
      background-color: rgb(175, 194, 212);
 
    }
 
    .edu .txt,
    .exp {
-     margin: 50px;
+     margin: 30px;
    }
 
    .edu .title {
@@ -447,6 +499,10 @@
    .exp {
      justify-content: start;
      font-size: 36px;
+   }
+   .edu h6{
+     width: 90%;
+     font-size: 1.5em;
    }
 
    .skill .title {
