@@ -162,8 +162,8 @@
      width: 50%;
      
    }
-   .kbk-text p{
-     font-size: 36px;
+   .kbk-text h5{
+     font-size: 28px;
    }
    .kbk-text img{
      width: 50%;
@@ -261,20 +261,13 @@
      height: 30%;
    }
    footer .fa-facebook-square {
-     font-size: 2em;
-     position: absolute;
-     top: 20%;
-     left: 45%;
-     color: burlywood;
+     
    }
 
    footer .fa-instagram {
-     font-size: 2em;
-     position: absolute;
-     top: 20%;
-     left: 45%;
-     color: burlywood;
+    
    }
+   
    
 
 
@@ -347,18 +340,13 @@
  }
 
  .kbk-text {
-   display: flex;
+   
    margin: 50px;
    width: 80%;
    
  }
 
- .kbk-text p {
-
-   line-height: 1.5;
-   font-size: 24px;
-   font-weight: 400;
- }
+ 
 
  .kbk-text img {
    max-width: 50%;
@@ -550,7 +538,7 @@
   width: 50%;
  }
 
- .content .line-1 a:hover h3 {
+ .content .line-1 a:hover h4{
    text-decoration: underline;
    color: rgb(23, 70, 30, );
  }
@@ -563,7 +551,7 @@
 
  }
 
- .content .line-1 h3 {
+ .content .line-1 h4 {
    text-align: center;
    color: rgba(22, 100, 50, 0.805);
    padding-bottom: 50px;
@@ -578,11 +566,15 @@
    padding: 0 50px;
  }
 
- .content .line-2 h3 {
+ .content .line-2 h4 {
    text-align: center;
    color: rgba(22, 100, 50, 0.805);
    padding-bottom: 50px;
  }
+  .content .line-2 a:hover h4 {
+    text-decoration: underline;
+    color: rgb(23, 70, 30, );
+  }
 
  .content .detail1,
  .detail2,
@@ -710,7 +702,7 @@
 
  .add p {
    margin: 20px 50px 100px;
-   padding: 10px;
+   
    font-size: 22px;
  }
 
@@ -821,7 +813,7 @@
    font-size: 2em;
    position: absolute;
    top:20%;
-   left: 35%;
+   left: 30%;
    color: burlywood;
  }
 
@@ -829,18 +821,20 @@
    font-size: 2em;
    position: absolute;
    top: 20%;
-   left: 35%;
+   left: 28%;
    color: burlywood;
  } 
  footer p{
    margin-top: 2em;
    text-align: center;
+   width: 100%;
+   margin: auto;
  }
  
  select{
-   width: 20%;
+   width: 40%;
    height: 30px;
-   margin:10px 40%;
+   margin:10px 30%;
    
   
  }
@@ -848,7 +842,7 @@
   width: 40px;
   height: 30px;
   border-radius: 10%;
-  margin:10px 48%;
+  margin:10px 44%;
  }
  p{
    margin: 10px 40% 20px;
