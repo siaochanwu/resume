@@ -201,7 +201,7 @@
    margin-top: 30px;
    width: 100%;
    text-align: center;
-   font-size: 1.5em;
+   font-size: 1em;
 
  }
 
@@ -371,42 +371,28 @@
 
  .works .demo {
    width: 80%;
-   margin: auto;
+   margin: 0 auto;
    position: relative;
  }
 
  .works .demo img {
    width: 100%;
-   margin: auto;
+   margin: 5px auto;
    vertical-align: middle;
  }
 
- .works .demo .txt {
-
-   position: absolute;
-   top: 20%;
-   left: 25%;
-   right: 25%;
-   text-align: center;
-   font-size: 36px;
-   color: #fff;
-
-
- }
- .works .demo .explain p {
+ .works .demo .explain p,
+ .useskill p,
+ .prove p {
    font-weight: 700;
-   font-size: 26px;
+   font-size: 24px;
  }
 
- 
-
- .works .explain {
-   margin: 20px;
-   padding: 1.2em;
- }
- .works .explain a{
+ .works .fab{
    text-decoration: none;
-   
+   font-size: 40px;
+   color: black;
+   cursor: pointer;
 
  }
  footer{
@@ -574,11 +560,20 @@
      display: flex;
    }
 
-   .works .demos .demo {
+   .works  .demo {
      padding: 20px;
    }
    .works .demo img{
      width: 300px;
+     height: 200px;
+   }
+   .works .demo .explain{
+     height: 180px;
+   }
+   .works .demo .useskill {
+     height: 210px;
+   }
+   .works .demo .prove {
      height: 200px;
    }
  }
