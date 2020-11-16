@@ -241,10 +241,31 @@
    
    color: #000;
  }
+
+.hobby{
+  width: 100%;
+  
+}
+.hobby .title{
+  font-size: 1.5em;
+  margin: 20px;
+}
+.hobby ul{
+  padding: 0px 25px;
+  font-size: 20px;
+   list-style: none;
+}
+.hobby li{
+  font-size: 16px;
+  padding: 5px 20px;
+}
+
+
+
  .edu {
    width: 100%;
    
-   padding-top: 50px;
+   padding-top: 30px;
  }
 
  .edu .title {
@@ -258,10 +279,10 @@
    display: flex;
    justify-content: center;
  }
- .edu h6{
+ .edu h4{
    font-size: 16px;
    margin: auto;
-   width: 40%;
+   width: 60%;
  }
  
  
@@ -282,7 +303,22 @@
    text-align: center;
 
  }
-
+ .skill .content .web,.other,.git,.language{
+   width: 80%;
+   background-color: rgba(226, 224, 224, 0.863);
+   margin: auto;
+   border-radius: 10px;
+    box-shadow: 5px 5px 3px 1px rgba(0,0,0,.2);
+ }
+ .skill .content .web:hover,
+ .other:hover,
+ .git:hover,
+ .language:hover{
+   transform: scale(1.05,1.05);
+   transition: transform .25s ease;
+   
+ }
+ 
  .skill .content ul {
    font-weight: 700;
    font-size: 1.5em;
@@ -290,71 +326,78 @@
 
  .skill .content li {
    list-style: none;
-   padding-top: 15px;
+   padding-top: 8px;
    font-weight: 400;
    font-size: 0.7em;
  }
 
  .skill .web {
    position: relative;
+   padding: 10px 20px;
  }
 
  .skill .web ul::before {
    content: '';
-   width: 30%;
+   width: 50%;
    height: 0.1em;
    background-color: #000;
    position: absolute;
-   top: 13%;
-   left: 35%;
+   top: 10%;
+   left: 25%;
    right: 0;
 
  }
 
  .skill .other {
    position: relative;
+   margin-top: 20px;
+   padding: 20px;
  }
 
  .skill .other ul::before {
    content: '';
-   width: 30%;
+   width: 50%;
    height: 0.1em;
    background-color: #000;
    position: absolute;
-   top: 30%;
-   left: 35%;
+   top: 27%;
+   left: 25%;
    right: 0;
 
  }
 
  .skill .git {
    position: relative;
+   margin-top: 20px;
+   padding: 15px;
  }
 
  .skill .git ul::before {
    content: '';
-   width: 30%;
+   width: 50%;
    height: 0.1em;
    background-color: #000;
    position: absolute;
-   top: 42%;
-   left: 35%;
+   top: 37%;
+   left: 25%;
    right: 0;
 
  }
 
  .skill .language {
    position: relative;
+   margin-top: 20px;
+   padding: 20px;
  }
 
  .skill .language ul::before {
    content: '';
-   width: 30%;
+   width: 50%;
    height: 0.1em;
    background-color: #000;
    position: absolute;
-   top: 29%;
-   left: 35%;
+   top: 37%;
+   left: 25%;
    right: 0;
 
  }
@@ -382,8 +425,7 @@
  }
 
  .works .demo .explain p,
- .useskill p,
- .prove p {
+ .useskill p{
    font-weight: 700;
    font-size: 24px;
  }
@@ -474,18 +516,27 @@
    .container .link{
      width: 0;
    }
+
+   .hobby .title {
+      font-size: 48px;
+   }
+
+   .hobby ul{
+     padding: 0 50px;
+     font-size: 30px;
+   }
+   .hobby li{
+     font-size: 24px;
+   }
+
    .edu {
      margin: 0;
      height: 600px;
-     background-color: rgb(175, 194, 212);
+     background-color: rgba(175, 194, 212, 0.452);
 
    }
 
-   .edu .txt,
-   .exp {
-     margin: 30px;
-   }
-
+ 
    .edu .title {
      font-size: 48px;
    }
@@ -494,10 +545,13 @@
    .exp {
      justify-content: start;
      font-size: 36px;
+     margin: 30px;
    }
-   .edu h6{
+   .edu h4{
      width: 90%;
      font-size: 1.5em;
+     margin: 0 70px;
+     color: rgba(0, 0, 139, 0.726);
    }
 
    .skill .title {
@@ -507,13 +561,22 @@
    .skill .content {
      width: 100%;
      display: flex;
+     flex-wrap: wrap;
    }
 
    .skill .web,
    .other,
    .git,
    .language {
-     width: 25%;
+     width: 45%;
+     margin: auto;
+   }
+   .skill .web,
+   .other,
+   .git,
+   .language, ul{
+    color: rgb(26, 15, 122);
+    font-size: 26px;
    }
 
    .skill .web ul::before {
@@ -534,19 +597,24 @@
 
    .skill .web li{
      font-size: 22px;
+     color: #000;
    }
    .skill .other li{
      font-size: 22px;
+     color: #000;
    }
    .skill .git li{
-     font-size: 22px;
+     font-size: 25px;
+     color: #000;
+
    }
    .skill .language li{
      font-size: 22px;
+     color: #000;
    }
 
    .works {
-     background-color: rgb(175, 194, 212);
+     background-color:rgba(175, 194, 212, 0.452);
    }
 
    .works .title {
@@ -562,24 +630,14 @@
 
    .works  .demo {
      padding: 20px;
+     
    }
-    .works .demo .aa{
-      position: relative;
-    }
+   .works .demo p{
+     color: rgb(26, 15, 122);
+   }
    .works .demo img{
      width: 300px;
      height: 200px;
-     opacity: 1;
-   }
-   .works .demo .aa p{
-     position: absolute;
-     top: 0;
-     left: 0;
-     right: 0;
-     opacity: 0;
-     color: black;
-   }
-   .works .demo img:hover .aa p{
      opacity: 1;
    }
    .works .demo img:hover{
