@@ -32,8 +32,13 @@
     </div>
 
     <div class="banner">
-      <div class="src">
-        <img src="./pexels-matt-hardy-1533720.jpg" />
+      
+        <div id="slide">
+          <img src="./pexels-matt-hardy-1533720.jpg" />
+          <img src="./pexels-leah-kelley-3935702.jpg" />
+          <img src="./pexels-porapak-apichodilok-373639.jpg" />
+          <img src="./pexels-suzy-hazelwood-1098592.jpg" />
+        </div>
         <div class="name">
           <p>
             吳 曉 嬋
@@ -41,7 +46,7 @@
             Wendy
           </p>
         </div>
-      </div>
+      
     </div>
 
     <div class="container">
@@ -279,6 +284,47 @@
 	    });
 
     });
+    </script>
+    <script>
+      var counter = 0, // 一開始顯示第一張
+      slide = document.querySelector('#slide'),
+      items = slide.querySelectorAll('img'), 
+      itemsCount = items.length,
+      prevBtn = document.createElement('a'), 
+      nextBtn = document.createElement('a'), 
+      timer = 3000, 
+      interval = window.setInterval(showNext, timer);  // 設定循環
+
+      prevBtn.classList.add('prev'); // 幫上一張按鈕加 class＝"prev" 給 CSS 指定樣式用
+      nextBtn.classList.add('next'); // 幫下一張按鈕加 class＝"next" 給 CSS 指定樣式用
+      slide.appendChild(prevBtn); // 將按鈕加到 #slide 裡
+      slide.appendChild(nextBtn);
+
+      // 帶入目前要顯示第幾張圖 
+      var showCurrent = function(){
+        var itemToShow = Math.abs(counter % itemsCount); // 取餘數才能無限循環
+        [].forEach.call( items, function(el){
+          el.classList.remove('show'); 
+          });
+        items[itemToShow].classList.add('show'); 
+      };
+
+      function showNext(){
+        counter++; 
+        showCurrent();
+      }
+
+      function showPrev(){
+        counter--; 
+        showCurrent();
+      }
+
+      // 綁定點擊上一張，下一張按鈕的事件
+      nextBtn.addEventListener('click', showNext, false);
+      prevBtn.addEventListener('click', showPrev, false);
+
+      // 一開始秀出第一張圖，也可以在 HTML 的第一個 img 裡加上 class="show"
+      items[0].classList.add('show');
     </script>
   </body>
 </html>

@@ -119,25 +119,91 @@
  }
 
  .banner {
+   width: 100%;
    margin-top: 80px;
  }
 
- .banner .src {
-   position: relative;
- }
+ 
 
- .banner img {
-   width: 100%;
-   margin: 0 auto 10px;
+  #slide {
+    position: relative;
+    width: 100%;
 
- }
+  }
+
+  #slide img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: .8s;
+  }
+
+  #slide img:first-child {
+    position: static;
+  }
+
+  #slide img.show {
+    opacity: 1;
+    visibility: visible
+  }
+
+  .prev,
+  .next {
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: .4s;
+    background-color: rgba(0, 0, 0, .12);
+    padding: 14px 12px;
+  }
+
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, .24);
+  }
+
+  .prev:after,
+  .next::after {
+    display: block;
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+  }
+
+  .prev {
+    left: 0;
+  }
+
+  .prev::after {
+    transform: rotate(-135deg);
+    margin-left: 4px;
+  }
+
+  .next {
+    right: 0;
+  }
+
+
+  .next:after {
+    transform: rotate(45deg);
+    margin-right: 4px;
+  }
 
  .banner .name p{
    display: block;
-   width: 100%;
+   width: 70%;
+   margin: auto;
    font-size: 30px;
    position: absolute;
-   top: 40%;
+   top: 25%;
    left: 0;
    right: 0;
    text-align: center;
@@ -372,18 +438,24 @@
 
  
 
-
+@media screen and (min-width:480px){
+  .banner .name p {
+    font-size: 40px;
+    top: 30%;
+  }
+}
 
 
  @media screen and (min-width:768px) {
 
   
-   .banner .src img{
-     height: 700px;
+   .banner{
+    max-width: 100%;
+    margin-top: -50px;
    }
    .banner .name p{
      font-size: 48px;
-     
+     top: 50%;
    }
 
    .container {
